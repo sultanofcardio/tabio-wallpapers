@@ -14,8 +14,13 @@ class Image {
 
     save(){
         return new Promise((resolve, reject) => {
+            if(!fs.existsSync(__dirname + '/images')) {
+                fs.mkdirSync(__dirname + '/images');
+            }
+
             const http = require('http');
             const file = fs.createWriteStream(this.path);
+
             let req = http.get(this.url,  response => {
                 let total = parseInt(response.headers['content-length']);
                 let bar = new progress('[:bar] :percent :etas', {
