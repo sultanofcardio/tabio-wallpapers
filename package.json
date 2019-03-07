@@ -1,0 +1,16 @@
+{
+  "name": "tabio-wallpapers",
+  "version": "1.0.0",
+  "main": "wallpaper_changer.js",
+  "preferGlobal": true,
+  "bin": {
+    "tabio-wallpapers": "wallpaper_changer.js"
+  },
+  "dependencies": {
+    "cheerio": "latest",
+    "progress": "^2.0.3",
+    "request": "latest",
+    "request-promise": "latest",
+    "wallpaper": "^4.2.0"
+  }
+}
