@@ -12,5 +12,7 @@
     "request": "latest",
     "request-promise": "latest",
     "wallpaper": "^4.2.0"
-  }
+  },
+  "author": "sultanofcardio",
+  "license": "ISC"
 }
